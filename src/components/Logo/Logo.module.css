@@ -1,0 +1,8 @@
+.logo {
+	fill: var(--white);
+}
+
+.navLogo {
+	display: inline-flex;
+	align-items: center;
+}
