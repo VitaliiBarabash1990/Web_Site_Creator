@@ -1,0 +1,153 @@
+.Testimonials__section_wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 32px;
+}
+.Testimonials__section {
+	background: var(--grey);
+	/* opacity: 0.5; */
+}
+
+.Testimonials__section_client_arrow_left,
+.Testimonials__section_client_arrow_right {
+	fill: var(--dark-blue);
+	width: 13px;
+	height: 22px;
+}
+.Testimonials__section_title {
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 147%;
+	color: var(--dark-blue);
+}
+.Testimonials__section_text {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 8px;
+	line-height: 175%;
+	color: var(--dark-blue);
+	opacity: 0.7;
+}
+.Testimonials__section_queue {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+.Testimonials__section_queue_title {
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 150%;
+	color: var(--dark-blue);
+}
+.Testimonials__section_client_img {
+	width: 52px; /* Ширина блока */
+	height: 52px; /* Высота блока */
+	border-radius: 50%; /* Делает блок круглым */
+	overflow: hidden; /* Скрывает всё за границами блока */
+	display: flex; /* Для центрирования изображения */
+	align-items: center; /* Центрирование по вертикали */
+	justify-content: center; /* Центрирование по горизонтали */
+}
+
+.Testimonials__section_client_img img {
+	width: 100%; /* Изображение занимает весь блок */
+	height: 100%; /* Изображение занимает весь блок */
+	object-fit: cover; /* Обеспечивает вписывание изображения с сохранением пропорций */
+}
+.Testimonials__section_client_descr_name {
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 178%;
+	color: var(--dark-blue);
+}
+.Testimonials__section_client_descr_position {
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 233%;
+	color: var(--dark-blue);
+}
+.Testimonials__section_info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.Testimonials__section_client {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 14px;
+}
+.Testimonials__section_client_arrow {
+	display: flex;
+	gap: 12px;
+}
+.Testimonials__section_client_arrow_block {
+	width: 48px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+	background: var(--white);
+}
+.Testimonials__section_client_arrow_block:hover,
+.Testimonials__section_client_arrow_block:focus {
+	background: var(--color3);
+}
+.Testimonials__section_client_arrow_block:hover
+	.Testimonials__section_client_arrow_left,
+.Testimonials__section_client_arrow_block:hover
+	.Testimonials__section_client_arrow_right {
+	fill: var(--white);
+	transition: fill 0.3s ease;
+}
+.Testimonials__section_client_arrow_right {
+	rotate: 180deg;
+}
+
+@media screen and (min-width: 375px) {
+	.Testimonials__section_title {
+		font-size: 24px;
+	}
+	.Testimonials__section_text {
+		font-size: 12px;
+	}
+	.Testimonials__section_queue_title {
+		font-size: 20px;
+	}
+}
+@media screen and (min-width: 768px) {
+	.Testimonials__section_wrap {
+		flex-direction: row;
+		gap: 32px;
+	}
+	.Testimonials__section_title {
+		font-size: 24px;
+	}
+	.Testimonials__section_text {
+		font-size: 12px;
+	}
+	.Testimonials__section_queue_title {
+		font-size: 20px;
+	}
+	.Testimonials__section_client_descr_name {
+		font-size: 18px;
+	}
+	.Testimonials__section_client_descr_position {
+		font-size: 12px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.Testimonials__section_title {
+		font-size: 38px;
+	}
+	.Testimonials__section_queue_title {
+		font-size: 32px;
+	}
+}

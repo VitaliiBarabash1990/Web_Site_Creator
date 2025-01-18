@@ -10,6 +10,7 @@ import { Faq } from "../../pages/Faq/Faq.jsx";
 import { Blog } from "../../pages/Blog/Blog.jsx";
 import { ContactUs } from "../../pages/ContactUs/ContactUs.jsx";
 import { NotFound } from "../../pages/NotFound/NotFound.jsx";
+import { Work } from "../../pages/Work/Work.jsx";
 
 function App() {
 	return (
@@ -23,6 +24,7 @@ function App() {
 					<Route path="faq" element={<Faq />} />
 					<Route path="blog" element={<Blog />} />
 					<Route path="contacts" element={<ContactUs />} />
+					<Route path="work" element={<Work />} />
 					<Route path="*" element={<NotFound />} />
 				</Route>
 			</Routes>

@@ -1,0 +1,6 @@
+[
+	{ "id": 0, "link": "http://facebook.com", "text": "facebook" },
+	{ "id": 1, "link": "http://twitter.com", "text": "twitter" },
+	{ "id": 2, "link": "http://instagram.com", "text": "instagram" },
+	{ "id": 3, "link": "http://linkedin.com", "text": "linkedin" }
+]

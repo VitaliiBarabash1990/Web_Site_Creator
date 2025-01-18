@@ -1,0 +1,26 @@
+[
+	{
+		"id": 0,
+		"num": "01",
+		"title_h3": "Strategy",
+		"text": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam ."
+	},
+	{
+		"id": 1,
+		"num": "02",
+		"title_h3": "Wireframing",
+		"text": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam ."
+	},
+	{
+		"id": 2,
+		"num": "03",
+		"title_h3": "Design",
+		"text": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam ."
+	},
+	{
+		"id": 3,
+		"num": "04",
+		"title_h3": "Development",
+		"text": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam ."
+	}
+]

@@ -1,0 +1,142 @@
+.hww__section {
+	background: var(--grey);
+}
+.hww__wraper {
+	display: flex;
+	flex-direction: column;
+}
+
+.hww__hww_left {
+	margin-bottom: 50px;
+}
+
+.hww__hww_right {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+.hww__title {
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 133%;
+	color: var(--dark-blue);
+	margin-bottom: 16px;
+}
+
+.hww__text {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 175%;
+	color: var(--dark-blue);
+	opacity: 0.7;
+	margin-bottom: 16px;
+}
+
+.hww__link {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 178%;
+	color: var(--royal-blue);
+}
+
+.hww__link:hover {
+	& .hww__icon {
+		fill: var(--hover-button);
+	}
+}
+
+.hww__hww_right_list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+	justify-content: center;
+}
+
+.hww__hww_right_item {
+	max-width: 328px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 8px;
+	border: 1px solid var(--color2);
+	border-radius: 20px;
+	padding: 8px;
+}
+
+.hww__icon {
+	width: 25px;
+	height: 12px;
+	fill: var(--royal-blue);
+	margin-left: 8px;
+}
+
+.hww__right_icon_item {
+	position: relative;
+	width: 50px;
+	height: 50px;
+}
+
+.hww__right_icon {
+	width: 100%;
+	height: 100%;
+}
+
+.hww__right_icon_item_num {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: black;
+}
+
+.hww__title_h3 {
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 150%;
+	color: var(--dark-blue);
+}
+
+.hww__right_text {
+	text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+	.hww__title {
+		font-size: 36px;
+	}
+	.hww__hww_right {
+		flex-direction: row;
+		max-width: 704px;
+	}
+	.hww__hww_right_list {
+		gap: 48px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.hww__wraper {
+		display: flex;
+		flex-direction: row;
+	}
+	.hww__hww_left {
+		margin-bottom: 0;
+		width: 35%;
+	}
+	.hww__hww_right {
+		width: 65%;
+	}
+	.hww__title {
+		font-size: 48px;
+		text-align: left;
+	}
+	.hww__text {
+		text-align: left;
+	}
+	.hww__link {
+		display: flex;
+		align-items: center;
+		justify-content: left;
+	}
+}

@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { Logo } from "../Logo/Logo.jsx";
+import footers from "./Footer.json";
 import s from "./Footer.module.css";
 import { Navigation } from "../Navigation/Navigation.jsx";
 
@@ -55,50 +56,21 @@ export const Footer = () => {
 							presence and help with your UX/UI design challenges.
 						</p>
 						<ul className={s.footer__soc}>
-							<li className={s.footer__soc_item}>
-								<NavLink
-									className={s.footer__soc_icon}
-									to="http://facebook.com"
-									target="_blank"
-								>
-									<svg className={s.footer_icon}>
-										<use href="/src/assets/symbol-defs.svg#facebook"></use>
-									</svg>
-								</NavLink>
-							</li>
-							<li className={s.footer__soc_item}>
-								<NavLink
-									className={s.footer__soc_icon}
-									to="http://twitter.com"
-									target="_blank"
-								>
-									<svg className={s.footer_icon}>
-										<use href="/src/assets/symbol-defs.svg#twitter"></use>
-									</svg>
-								</NavLink>
-							</li>
-							<li className={s.footer__soc_item}>
-								<NavLink
-									className={s.footer__soc_icon}
-									to="http://instagram.com"
-									target="_blank"
-								>
-									<svg className={s.footer_icon}>
-										<use href="/src/assets/symbol-defs.svg#instagram"></use>
-									</svg>
-								</NavLink>
-							</li>
-							<li className={s.footer__soc_item}>
-								<NavLink
-									className={s.footer__soc_icon}
-									to="http://linkedin.com"
-									target="_blank"
-								>
-									<svg className={s.footer_icon}>
-										<use href="/src/assets/symbol-defs.svg#linkedin"></use>
-									</svg>
-								</NavLink>
-							</li>
+							{footers.map((footer) => {
+								return (
+									<li key={footer.id} className={s.footer__soc_item}>
+										<NavLink
+											className={s.footer__soc_icon}
+											to={footer.link}
+											target="_blank"
+										>
+											<svg className={s.footer_icon}>
+												<use href={`/symbol-defs.svg#${footer.text}`}></use>
+											</svg>
+										</NavLink>
+									</li>
+								);
+							})}
 						</ul>
 					</div>
 				</div>

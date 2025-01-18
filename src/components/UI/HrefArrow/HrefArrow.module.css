@@ -1,0 +1,49 @@
+.OurWork__link {
+	font-size: 8px;
+	display: flex;
+	align-items: center;
+}
+/* .OurWork__link:hover .OurWork__icon {
+	fill: var(--hover-button);
+} */
+.OurWork__icon {
+	width: 12px;
+	height: 6px;
+	padding-left: 4px;
+}
+
+.OurWork__link {
+	color: #000; /* Цвет по умолчанию */
+}
+
+.OurWork__link--colored {
+	color: var(--dynamic-color); /* Цвет, задаваемый через CSS-переменные */
+}
+
+.OurWork__icon {
+	fill: var(--dynamic-color); /* Цвет стрелки по умолчанию */
+	transition: fill 0.3s ease;
+}
+
+.OurWork__link:hover .OurWork__icon {
+	fill: var(--hover-button); /* Цвет стрелки при наведении */
+}
+@media screen and (min-width: 375px) {
+	.OurWork__link {
+		font-size: 12px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.OurWork__link {
+		font-size: 16px;
+	}
+	.OurWork__icon {
+		width: 25px;
+		height: 12px;
+		padding-left: 8px;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+}

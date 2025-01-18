@@ -1,0 +1,181 @@
+.OurWork__section {
+	background: var(--white);
+}
+.OurWork__wrap {
+	display: flex;
+	flex-direction: column;
+}
+.OurWork__head {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.OurWork__head_title {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 133%;
+	color: var(--dark-blue);
+}
+.OurWork__link {
+	font-size: 12px;
+	color: var(--dark-blue);
+	display: flex;
+	align-items: center;
+}
+
+.OurWork__mein {
+	display: flex;
+	flex-direction: column;
+}
+.OurWork__mein_img_1,
+.OurWork__mein_img_2_1,
+.OurWork__mein_img_2_2 {
+	background-size: contain; /* Изображение масштабируется, чтобы заполнить контейнер */
+	background-position: center; /* Центрируем изображение */
+	background-repeat: no-repeat; /* Запрещаем повторение изображения */
+	max-width: 100vw; /* Ширина на весь экран */
+	/* height: calc(100vw * 3 / 4); */
+	aspect-ratio: 4 / 3;
+}
+.OurWork__mein_img_2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.OurWork__mein_img_1 {
+	background-image: url("/img/optimazed/Card_x1.jpg");
+}
+.OurWork__mein_overflow_img_1,
+.OurWork__mein_overflow_img_2_2 {
+	width: 47%;
+	height: 100%;
+	background: linear-gradient(306deg, #1c1e53 0%, rgba(28, 30, 83, 0.42) 100%);
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	justify-content: flex-end;
+	gap: 4px;
+	padding: 8px;
+}
+
+.OurWork__mein_overflow_img_2_2 {
+	width: 85%;
+}
+.OurWork__mein_overflow_title {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 150%;
+	color: var(--white);
+}
+.OurWork__mein_overflow_text {
+	font-weight: 500;
+	font-size: 8px;
+	line-height: 175%;
+	color: var(--white);
+	opacity: 0.8;
+	margin-bottom: 8px;
+}
+
+.OurWork__mein_img_2_1 {
+	background-image: url("/img/optimazed/Card2_2_x1.jpg");
+	width: 50%;
+}
+.OurWork__mein_img_2_2 {
+	background-image: url("/img/optimazed/Card1_1_x1.jpg");
+}
+
+@media screen and (min-width: 375px) {
+	.OurWork__head_title {
+		font-size: 16px;
+	}
+	.OurWork__mein_overflow_title {
+		font-size: 12px;
+	}
+	.OurWork__mein_overflow_text {
+		font-size: 10px;
+	}
+	.OurWork__mein_overflow_img_1 {
+		gap: 8px;
+		padding: 12px;
+		padding-bottom: 36px;
+	}
+	.OurWork__mein_overflow_img_1,
+	.OurWork__mein_overflow_img_2_2 {
+		padding-bottom: 36px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.OurWork__mein {
+		flex-direction: row;
+		gap: 8px;
+	}
+	.OurWork__mein_img_1 {
+		width: 66%;
+	}
+	.OurWork__mein_img_2 {
+		flex-direction: column-reverse;
+		width: 34%;
+		gap: 8px;
+	}
+	.OurWork__mein_img_2_1 {
+		width: 100%;
+	}
+	.OurWork__mein_overflow_img_1 {
+		gap: 16px;
+	}
+	.OurWork__mein_overflow_img_1,
+	.OurWork__mein_overflow_img_2_2 {
+		padding: 24px;
+	}
+
+	.OurWork__head_title {
+		font-size: 24px;
+	}
+	.OurWork__mein_overflow_title {
+		font-size: 16px;
+	}
+	.OurWork__mein_overflow_text {
+		font-size: 12px;
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.OurWork__mein {
+		gap: 32px;
+	}
+
+	.OurWork__mein_img_2 {
+		gap: 32px;
+	}
+
+	.OurWork__head_title {
+		font-size: 36px;
+	}
+	.OurWork__mein_overflow_title {
+		font-size: 24px;
+	}
+	.OurWork__mein_overflow_text {
+		font-size: 16px;
+		margin-bottom: 24px;
+	}
+	.OurWork__mein_overflow_img_1,
+	.OurWork__mein_overflow_img_2_2 {
+		padding: 48px;
+	}
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 100vh),
+	(min-resolution: 192dpi) and (max-width: 100vh) {
+	.OurWork__mein_img_1 {
+		background-image: url("/img/optimazed/Card_x2.jpg");
+		background-size: contain; /* Изображение масштабируется, чтобы заполнить контейнер */
+		background-position: center; /* Центрируем изображение */
+		background-repeat: no-repeat; /* Запрещаем повторение изображения */
+		max-width: 100vw; /* Ширина на весь экран */
+		/* height: calc(100vw * 3 / 4); */
+		aspect-ratio: 4 / 3;
+	}
+}

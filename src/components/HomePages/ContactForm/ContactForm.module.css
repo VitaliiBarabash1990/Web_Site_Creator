@@ -1,0 +1,184 @@
+.ContactForm__section {
+	background: var(--white);
+}
+.ContactForm__wrap {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+.ContactForm__wrap_img {
+	background-image: url("/img/optimazed/woman-writing-on_x1.jpg");
+	background-size: cover; /* Изображение масштабируется, чтобы заполнить контейнер */
+	background-position: center; /* Центрируем изображение */
+	background-repeat: no-repeat; /* Запрещаем повторение изображения */
+	max-width: 100vw; /* Ширина на весь экран */
+	/* height: calc(100vw * 3 / 4); */
+	aspect-ratio: 4 / 4;
+}
+.ContactForm__wrap_img_front_shadow {
+	background: rgba(28, 30, 83, 0.5);
+	width: 100%;
+	height: 100%;
+	padding: 32px;
+}
+
+.ContactForm__title {
+	text-align: left;
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 137%;
+	color: var(--white);
+}
+
+.ContactForm__text {
+	text-align: left;
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 8px;
+	line-height: 175%;
+	color: var(--white);
+}
+
+.ContactForm {
+	margin-top: 12px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 16px;
+}
+.ContactForm__wrap_form {
+	background: var(--tint-blue);
+	padding: 32px;
+	padding-bottom: 16px;
+}
+.ContactForm__wrap_form_title {
+	margin-bottom: 8px;
+}
+.userSettings__errorMessage {
+	/* margin-top: 10px; */
+	position: relative;
+}
+.ContactForm__error {
+	position: absolute;
+	left: 0;
+	color: red;
+	font-size: 12px;
+	z-index: 5;
+	padding-left: 10px;
+}
+.ContactForm__button {
+	border-radius: 41px;
+	padding: 15px 51px;
+	background: var(--yellow);
+	font-family: var(--second-family);
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 178%;
+	color: #1b1c2b;
+}
+.ContactForm__button_href {
+	align-self: center;
+}
+.ContactForm__field {
+	background: transparent;
+	width: 100%;
+	height: 32px;
+	border: 1.5px solid rgba(255, 255, 255, 0.05);
+	border-radius: 8px;
+}
+
+@media screen and (min-width: 375px) {
+	.ContactForm__wrap {
+		align-items: center;
+	}
+
+	.ContactForm__wrap_img,
+	.ContactForm__wrap_form {
+		max-width: 311px;
+	}
+	.ContactForm__title {
+		font-size: 24px;
+	}
+	.ContactForm__text {
+		font-size: 12px;
+	}
+}
+@media screen and (min-width: 768px) {
+	.ContactForm__wrap {
+		flex-direction: row;
+		align-items: inherit;
+		justify-content: center;
+		max-width: 850px;
+	}
+	.ContactForm__wrap_img {
+		aspect-ratio: 4 / 3;
+	}
+	.ContactForm__wrap_img,
+	.ContactForm__wrap_form {
+		min-width: 50%;
+	}
+	.ContactForm__wrap_form_title {
+		margin-bottom: 12px;
+	}
+	.ContactForm__title {
+		font-size: 24px;
+	}
+	.ContactForm__text {
+		font-size: 12px;
+	}
+	.ContactForm__wrap_img_front_shadow {
+		padding: 48px;
+	}
+	.ContactForm__wrap_form {
+		padding: 48px;
+		padding-bottom: 24px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.ContactForm__wrap {
+		flex-direction: row;
+		align-items: inherit;
+		justify-content: center;
+		max-width: 100%;
+	}
+	.ContactForm__wrap_img,
+	.ContactForm__wrap_form {
+		min-width: 50%;
+	}
+	.ContactForm__title {
+		font-size: 48px;
+	}
+	.ContactForm__text {
+		font-size: 16px;
+	}
+	.ContactForm__wrap_img_front_shadow {
+		padding: 96px;
+	}
+	.ContactForm__wrap_form {
+		padding: 96px;
+		padding-bottom: 48px;
+	}
+	.ContactForm__wrap_form_title {
+		margin-bottom: 16px;
+		font-size: 32px;
+	}
+	.ContactForm {
+		margin-top: 40px;
+	}
+	.ContactForm__field {
+		height: 64px;
+	}
+
+	.ContactForm__button {
+		margin-top: 32px;
+		font-size: 18px;
+	}
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 100vh),
+	(min-resolution: 192dpi) and (max-width: 100vh) {
+	.ContactForm__wrap_img {
+		background-image: url("/img/optimazed/woman-writing-on_x2.jpg");
+	}
+}

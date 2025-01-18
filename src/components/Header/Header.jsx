@@ -3,7 +3,7 @@ import { Logo } from "../Logo/Logo.jsx";
 import s from "./Header.module.css";
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
-import BurgerButton from "../UI/BurgerButton/BurgerButton.jsx";
+import BurgerButton from "../UI/HrefArrow/BurgerButton/BurgerButton.jsx";
 
 export const Header = () => {
 	const [menuOpen, setMenuOpen] = useState(false);

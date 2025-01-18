@@ -9,7 +9,7 @@ import { Testimonials } from "../../components/HomePages/Testimonials/Testimonia
 
 export const HomePage = () => {
 	return (
-		<div>
+		<div className="main">
 			<Hero />
 			<HowWeWork />
 			<OurWork />
