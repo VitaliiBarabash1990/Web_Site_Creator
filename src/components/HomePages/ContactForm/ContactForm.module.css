@@ -1,5 +1,6 @@
 .ContactForm__section {
 	background: var(--white);
+	padding: 0;
 }
 .ContactForm__wrap {
 	display: flex;
